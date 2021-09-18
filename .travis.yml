@@ -5,6 +5,5 @@ services:
  - docker
 before_install:
  - pip install --upgrade --no-cache-dir --default-timeout=210 skencli
- - usermod -aG docker $USER
 script:
  - docker run --rm --mount type=bind,source="$(pwd)",target=/scan dops-registry.fortinet-us.com/fortidevsecops/fdevsec_sec_engine:0.0.1 main
