@@ -1,0 +1,6 @@
+id:
+  org: "7be2fe2f-49b0-4b7b-882d-c27a2836c8f7"
+  app: "61ebc9cf-50cd-4324-8176-377503c4a5bf"
+
+on_prem:
+  sec_ops_server: http://10.34.160.119
