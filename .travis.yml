@@ -4,7 +4,7 @@ python:
 services:
  - docker
 before_install:
- - update-ca-certificates
+ - sudo update-ca-certificates
  - cat  /usr/local/share/ca-certificates/ca.crt
  - curl -v https://dops-git.fortinet-us.com
 script:
