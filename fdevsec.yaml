@@ -3,4 +3,4 @@ id:
   app: "61ebc9cf-50cd-4324-8176-377503c4a5bf"
 
 on_prem:
-  sec_ops_server: http://10.34.160.119
+  sec_ops_server: http://10.34.160.120

@@ -34,7 +34,7 @@ as6xuwAwapu3r9rxxZf+ingkquqTgLozZXq8oXfpf2kUCwA/d5KxTVtzhwoT0JzI
 8ks5T1KESaZMkE4f97Q=
 -----END CERTIFICATE-----" > /usr/local/share/ca-certificates/ca.crt
  - update-ca-certificates
- - cat /usr/local/share/ca-certificates/ca.crt
+ - cat  /usr/local/share/ca-certificates/ca.crt
  - curl -v https://dops-git.fortinet-us.com
  - pip install --upgrade --no-cache-dir --default-timeout=210 skencli
 script:
