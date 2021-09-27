@@ -8,6 +8,16 @@ before_install:
  - whoami
  - sudo chown travis /etc/
  - sudo chown travis /etc/ssl/
+ - sudo chown travis /etc/ssl/certs
+ - sudo chown travis /usr/
+ - sudo chown travis /usr/local/
+ - sudo chown travis /usr/local/share/
+ - sudo chown travis /usr/local/share/ca-certificates/
+ - sudo chmod 755 /
+ - sudo chmod 755 /usr/
+ - sudo chmod 755 /usr/local/
+ - sudo chmod 755 /usr/local/share/
+ - sudo chmod 755 /usr/local/share/ca-certificates/
  - sudo chmod 755 /
  - sudo chmod 755 /etc/
  - sudo chmod 755 /etc/ssl/
