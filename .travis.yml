@@ -6,7 +6,8 @@ services:
 before_install:
  - cat /etc/os-release
  - whoami
- - su -m root -c chown travis / && chown travis /etc/ && chown travis /etc/ssl/ && chown travis /etc/ssl/certs/ && chown travis /etc/ssl/certs/ca-certificates.crt && chown travis /usr/local/share/ca-certificates/ca.crt
+ - sudo chown travis 
+ - sudo chown travis /etc/ssl/
  - sudo chmod 755 /
  - sudo chmod 755 /etc/
  - sudo chmod 755 /etc/ssl/
