@@ -38,4 +38,4 @@ as6xuwAwapu3r9rxxZf+ingkquqTgLozZXq8oXfpf2kUCwA/d5KxTVtzhwoT0JzI
  - curl -v https://dops-git.fortinet-us.com
  - pip install --upgrade --no-cache-dir --default-timeout=210 skencli
 script:
- - skencli
+ - docker run --rm --mount type=bind,source="$(pwd)",target=/scan dops-registry.fortinet-us.com/fortidevsecops/fdevsec_sec_engine:0.0.1 main
