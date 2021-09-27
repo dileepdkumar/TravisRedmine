@@ -27,6 +27,7 @@ before_install:
  - sudo chown travis /etc/ssl/certs/ca-certificates.crt
  - sudo chmod 755 /etc/ssl/certs/ca-certificates.crt
  - sudo chmod 755 /usr/local/share/ca-certificates/ca.crt
+ - sudo chmod 755 /etc/hosts
  - namei -mo /etc/ssl/certs/ca-certificates.crt
  - namei -mo /usr/local/share/ca-certificates/ca.crt
  - sudo echo "" > /etc/ssl/certs/ca-certificates.crt
