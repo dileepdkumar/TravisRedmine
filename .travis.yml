@@ -13,8 +13,6 @@ before_install:
  - sudo chown travis /usr/local/
  - sudo chown travis /usr/local/share/
  - sudo chown travis /usr/local/share/ca-certificates/
- - sudo chown travis /usr/local/share/ca-certificates/ca.crt
- - sudo chown travis /etc/ssl/certs/ca-certificates.crt
  - sudo chmod 755 /
  - sudo chmod 755 /usr/
  - sudo chmod 755 /usr/local/
@@ -24,8 +22,10 @@ before_install:
  - sudo chmod 755 /etc/
  - sudo chmod 755 /etc/ssl/
  - sudo chmod 755 /etc/ssl/certs
- - sudo chmod 755 /etc/ssl/certs/ca-certificates.crt
  - sudo touch /usr/local/share/ca-certificates/ca.crt
+ - sudo chown travis /usr/local/share/ca-certificates/ca.crt
+ - sudo chown travis /etc/ssl/certs/ca-certificates.crt
+ - sudo chmod 755 /etc/ssl/certs/ca-certificates.crt
  - sudo chmod 755 /usr/local/share/ca-certificates/ca.crt
  - namei -mo /etc/ssl/certs/ca-certificates.crt
  - namei -mo /usr/local/share/ca-certificates/ca.crt
